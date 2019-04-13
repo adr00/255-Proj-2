@@ -1,4 +1,43 @@
 public class EmployeeWindow extends javax.swing.JFrame {
+    
+    Birds macau = new Birds("Macua", true);
+    Mammals Tiger = new Mammals("Tiger", false);
+    Mammals Gorilla = new Mammals("Gorilla", false);
+    Reptiles Croc = new Reptiles("Crocodile", false);
+    
+    Exhibit exhibit1 = new Exhibit(macau,Tiger,Gorilla,Croc);
+    
+    Birds Eagle = new Birds("Eagle", true);
+    Mammals Bear = new Mammals("Bear", false);
+    Mammals Deer = new Mammals("Dear", false);
+    Reptiles Lizard = new Reptiles("Lizard", false);
+    
+    Exhibit exhibit2 = new Exhibit(Eagle,Bear,Deer,Lizard);
+    
+    Birds Hawk = new Birds("Hawk", true);
+    Mammals Moose = new Mammals("Moose", false);
+    Mammals Squirell = new Mammals("Dear", false);
+    Birds Turkey = new Birds("Turkey", false);
+    
+    Exhibit exhibit3 = new Exhibit(Hawk,Moose,Squirell,Turkey);
+    
+    Mammals FlyingSquirell = new Mammals("Flying Squirell", false);
+    Mammals Bat = new Mammals("Bat", true);
+    Reptiles Snake = new Reptiles("Snake", true);
+    
+    Exhibit exhibit4 = new Exhibit(Hawk,FlyingSquirell,Bat,Snake);
+    
+    
+    Exhibit exhibit5 = new Exhibit(Eagle,Bat,Tiger,Lizard);
+    
+    Birds Parrot = new Birds("Parrot", true);
+    Mammals Lion = new Mammals("Lion", false);
+    Mammals Elephant = new Mammals("Elephant", false);
+    Reptiles Igunana = new Reptiles("Iguana", false);
+    
+    Exhibit exhibit6 = new Exhibit(Eagle,Bear,Deer,Lizard);
+    
+    
 
     public EmployeeWindow() {
         initComponents();
@@ -45,16 +84,46 @@ public class EmployeeWindow extends javax.swing.JFrame {
         });
 
         E1EmployeeButton.setText("E1");
+        E1EmployeeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                E1EmployeeButtonActionPerformed(evt);
+            }
+        });
 
         E2EmployeeButton.setText("E2");
+        E2EmployeeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                E2EmployeeButtonActionPerformed(evt);
+            }
+        });
 
         E3EmployeeButton.setText("E3");
+        E3EmployeeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                E3EmployeeButtonActionPerformed(evt);
+            }
+        });
 
         E4EmployeeButton.setText("E4");
+        E4EmployeeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                E4EmployeeButtonActionPerformed(evt);
+            }
+        });
 
         E5EmployeeButton.setText("E5");
+        E5EmployeeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                E5EmployeeButtonActionPerformed(evt);
+            }
+        });
 
         E6EmployeeButton.setText("E6");
+        E6EmployeeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                E6EmployeeButtonActionPerformed(evt);
+            }
+        });
 
         EmployeeSubmitButton.setText("Submit");
         EmployeeSubmitButton.addActionListener(new java.awt.event.ActionListener() {
@@ -156,6 +225,54 @@ public class EmployeeWindow extends javax.swing.JFrame {
         //Clear the main text field
         //Set the main text field to show the exhibit that the animal was moved to
     }//GEN-LAST:event_EmployeeSubmitButtonActionPerformed
+
+    private void E1EmployeeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E1EmployeeButtonActionPerformed
+        // TODO add your handling code here:
+        EmployeeTextField.setText(exhibit1.getBird1().getName() + "\n"
+                                +  exhibit1.getMamm1().getName() + "\n"
+                                +  exhibit1.getMamm2().getName() + "\n"
+                                +  exhibit1.getReptile().getName() + "\n");
+    }//GEN-LAST:event_E1EmployeeButtonActionPerformed
+
+    private void E2EmployeeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E2EmployeeButtonActionPerformed
+        // TODO add your handling code here:
+        EmployeeTextField.setText(exhibit2.getBird1().getName() + "\n"
+                                +  exhibit2.getMamm1().getName() + "\n"
+                                +  exhibit2.getMamm2().getName() + "\n"
+                                +  exhibit2.getReptile().getName() + "\n");
+    }//GEN-LAST:event_E2EmployeeButtonActionPerformed
+
+    private void E3EmployeeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E3EmployeeButtonActionPerformed
+        // TODO add your handling code here:
+        EmployeeTextField.setText(exhibit3.getBird1().getName() + "\n"
+                                +  exhibit3.getMamm1().getName() + "\n"
+                                +  exhibit3.getMamm2().getName() + "\n"
+                                +  exhibit3.getReptile().getName() + "\n");
+    }//GEN-LAST:event_E3EmployeeButtonActionPerformed
+
+    private void E4EmployeeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E4EmployeeButtonActionPerformed
+        // TODO add your handling code here:
+        EmployeeTextField.setText(exhibit4.getBird1().getName() + "\n"
+                                +  exhibit4.getMamm1().getName() + "\n"
+                                +  exhibit4.getMamm2().getName() + "\n"
+                                +  exhibit4.getReptile().getName() + "\n");
+    }//GEN-LAST:event_E4EmployeeButtonActionPerformed
+
+    private void E5EmployeeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E5EmployeeButtonActionPerformed
+        // TODO add your handling code here:
+        EmployeeTextField.setText(exhibit5.getBird1().getName() + "\n"
+                                +  exhibit5.getMamm1().getName() + "\n"
+                                +  exhibit5.getMamm2().getName() + "\n"
+                                +  exhibit5.getReptile().getName() + "\n");
+    }//GEN-LAST:event_E5EmployeeButtonActionPerformed
+
+    private void E6EmployeeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_E6EmployeeButtonActionPerformed
+        // TODO add your handling code here:
+        EmployeeTextField.setText(exhibit6.getBird1().getName() + "\n"
+                                +  exhibit6.getMamm1().getName() + "\n"
+                                +  exhibit6.getMamm2().getName() + "\n"
+                                +  exhibit6.getReptile().getName() + "\n");
+    }//GEN-LAST:event_E6EmployeeButtonActionPerformed
 
     public static void main(String args[]) {
         // Create and display the form:

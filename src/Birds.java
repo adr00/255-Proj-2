@@ -17,17 +17,19 @@ public class Birds extends Animals {
     public Birds(){
         super();
         fly = false;
-        wingSpan = "$$$";
-        beakType = "$$$";
-        eggDesc = "$$$";
+       
     }
 
-    public Birds(Boolean f, String ws, String bt, String ed){
-        super();
+    public Birds(String n, Boolean f){
+        super(n);
         fly = f;
-        wingSpan = ws;
-        beakType = bt;
-        eggDesc = ed;
+        
+    }
+    
+    @Override
+    public String getName()
+    {
+        return super.getName();
     }
 
     public Boolean getFly() {

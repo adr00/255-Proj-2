@@ -15,14 +15,17 @@ public class Reptiles extends Animals {
 
     public Reptiles(){
         venomous = false;
-        skinType = "$$$";
-        regrowth = false;
+        
     }
 
-    public Reptiles(Boolean v, String st, Boolean rg){
+    public Reptiles(String n,Boolean v){
+        super(n);
         venomous = v;
-        skinType = st;
-        regrowth = rg;
+       
+    }
+    public String getName()
+    {
+        return super.getName();
     }
 
     public Boolean getVenomous() {

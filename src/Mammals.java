@@ -14,15 +14,17 @@ public class Mammals extends Animals {
     private Boolean isNoctournal;
 
     public Mammals(){
-        hairtype = "$$$";
-        thumb = false;
         isNoctournal = false;
     }
 
-    public Mammals(String ht, Boolean t, Boolean n){
-        hairtype = ht;
-        thumb = t;
-        isNoctournal = n;
+    public Mammals(String n, Boolean noc){
+        super(n);
+        isNoctournal = noc;
+    }
+    
+    public String getName()
+    {
+        return super.getName();
     }
 
     public String getHairtype() {
