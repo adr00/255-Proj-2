@@ -156,31 +156,49 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="E1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="E1EmployeeButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="E2EmployeeButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="E2"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="E2EmployeeButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="E3EmployeeButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="E3"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="E3EmployeeButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="E4EmployeeButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="E4"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="E4EmployeeButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="E5EmployeeButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="E5"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="E5EmployeeButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="E6EmployeeButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="E6"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="E6EmployeeButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="EmployeeTextField">
     </Component>
